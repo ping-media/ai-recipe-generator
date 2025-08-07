@@ -5,6 +5,8 @@ FROM python:3.11-slim
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 ENV PYTHONPATH=/app
+ENV HOST=0.0.0.0
+ENV PORT=8000
 
 # Set work directory
 WORKDIR /app
@@ -16,17 +18,15 @@ RUN apt-get update \
         g++ \
         build-essential \
         curl \
+        git \
         && rm -rf /var/lib/apt/lists/*
 
-# Copy requirements first for better caching
-COPY requirements.txt .
+# Clone the repository from GitHub
+RUN git clone https://github.com/ping-media/ai-recipe-generator.git .
 
 # Install Python dependencies
 RUN pip install --no-cache-dir --upgrade pip \
     && pip install --no-cache-dir -r requirements.txt
-
-# Copy application code
-COPY . .
 
 # Create non-root user for security
 RUN useradd --create-home --shell /bin/bash app \
