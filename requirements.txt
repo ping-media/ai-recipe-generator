@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+pymongo
+pinecone
+openai
+python-dotenv
+pydantic
+python-multipart
+PyPDF2
+pdfplumber
+langchain
+langchain-openai
+reportlab

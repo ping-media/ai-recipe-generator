@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "student_id": "user001",
+      "name": "John Doe",
+      "favorite_foods": ["pasta", "pizza", "salad", "chicken"],
+      "dietary_preferences": ["vegetarian", "gluten-free"]
+    },
+    {
+      "student_id": "user002", 
+      "name": "Jane Smith",
+      "favorite_foods": ["curry", "rice", "vegetables", "fish"],
+      "dietary_preferences": ["vegan", "low-sodium"]
+    },
+    {
+      "student_id": "user003",
+      "name": "Mike Johnson",
+      "favorite_foods": ["beef", "potatoes", "bread", "cheese"],
+      "dietary_preferences": ["keto", "high-protein"]
+    },
+    {
+      "student_id": "user004",
+      "name": "Sarah Wilson",
+      "favorite_foods": ["sushi", "noodles", "seafood", "avocado"],
+      "dietary_preferences": ["pescatarian", "low-carb"]
+    },
+    {
+      "student_id": "user005",
+      "name": "David Brown",
+      "favorite_foods": ["grilled chicken", "quinoa", "sweet potato", "almonds"],
+      "dietary_preferences": ["paleo", "dairy-free"]
+    }
+  ]
+} 
